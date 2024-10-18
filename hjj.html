@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cer {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: white;
+
+}
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+    </style>
+</head>
+<body>
+
+
+<div class="cer">
+  <img src="Coffee-Pouch-Packaging-Mockup-01.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">
+        <h2>food packing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, commodi quia temporibus ducimus odio deleniti magni nihil, perferendis soluta libero voluptates rerum ab natus. Mollitia voluptate aut eos veritatis neque.</p>
+    </div>
+  </div>
+  
+</div>
+<div class="px-2">
+
+</div>
+    
+</body>
+</html>
